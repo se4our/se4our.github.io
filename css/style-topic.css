@@ -1,0 +1,9 @@
+.text {
+    width: 90%;
+    height: 80%;
+    position: absolute;
+    bottom: 2%;
+    left: 5%;
+    text-align: justify;
+    overflow-y: scroll;
+}

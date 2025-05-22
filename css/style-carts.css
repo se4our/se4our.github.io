@@ -1,0 +1,43 @@
+.carts {
+    width: 60%;
+    height: 80%;
+    left: 20%;
+    bottom: 10%;
+    position: absolute;
+    text-align: left;
+}
+.res {
+    position: absolute;
+    bottom: 5%;
+    left: 45%;
+}
+picture {
+    position: absolute;
+    bottom: 50%;
+    left: 28%;
+}
+.hint {
+    width: 40px;
+    height: 40px;
+    position: absolute;
+    top: 90%;
+    left: 1%;
+    background-color: rgb(43, 198, 226);
+    border: 0px;
+    border-radius: 10px;
+}
+.cart1{
+    position: absolute;
+    bottom: 30%;
+}
+.yes1, .no1 {
+    display: none;
+}
+.clue {
+    position: absolute;
+    width: 280px;
+    height: 100px;
+    top: 85%;
+    left: 5%;
+    background-color: azure;
+}
