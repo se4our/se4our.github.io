@@ -1,4 +1,4 @@
-window.onload = function () {
+window.addEventListener("load", function () {
     const hint = document.createElement("div");
     hint.className = "hint";
     hint.textContent = "?";
@@ -9,26 +9,24 @@ window.onload = function () {
             clue.textContent = " Этот памятник культуры являлся первой каменной церковью и находился в столице Древней Руси.";
             document.getElementById("carts").appendChild(clue);
         }
-    })
+    });
     hint.addEventListener("mouseleave", function () {
         const clue = document.getElementsByClassName("clue");
         while (clue.length > 0) {
             clue[0].parentNode.removeChild(clue[0]);
         }
-        clue.removeChild();
-    })
+    });
     document.getElementById("carts").appendChild(hint);
-    document.getElementById("res1").addEventListener("click", res1);  
-}
-function res1() {
-    document.getElementById("one").style.display = "none";
-    if (document.getElementById("answer").value === "Десятинная церковь, X век") {
-        document.getElementById("yes1").style.display = "block";
-        document.getElementById("cart1").style.display = "none";
+    document.getElementById("res1").addEventListener("click", res1);
+    function res1() {
+        document.getElementById("one").style.display = "none";
+        if (document.getElementById("answer").value === "Десятинная церковь, X век") {
+            document.getElementById("yes1").style.display = "block";
+            document.getElementById("cart1").style.display = "none";
+        } else {
+            document.getElementById("no1").style.display = "block";
+            document.getElementById("cart1").style.display = "none";
+        }
+        document.getElementById("res1").style.display = "none";
     }
-    else {
-        document.getElementById("no1").style.display = "block";
-        document.getElementById("cart1").style.display = "none";
-    }
-    document.getElementById("res1").style.display = "none"; 
-}
+});

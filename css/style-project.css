@@ -3,14 +3,17 @@ a:hover {
     /*font-family: sans-serif; color: black;*/
 }
 :root {
-    --color_block: rgb(248, 207, 146);
+    --color_block: rgb(243, 211, 160);
     --color_font_border: black;
-    --color_fon: rgb(21, 78, 235);
+    --color_fon: rgb(134, 166, 255);
 }
 [data-theme="dark"] {                   
-    --color_block: rgb(0, 0, 0);
+    --color_block: rgb(1, 6, 29);
     --color_font_border: #ffffff;
-    --color_fon: rgb(2, 14, 31);
+    --color_fon: rgb(0, 0, 0);
+}
+legend {
+    color: var(--color_font_border);
 }
 body {
     width: 100%;
@@ -30,7 +33,7 @@ div {
     font-size: 20px;
     text-align: center;
     background-color: var(--color_block);
-    border: 5px solid var(--color_font_border);
+    border: 3px solid var(--color_font_border);
     /*rgb(248, 207, 146);*/
     /*rgb(243, 205, 36);*/
     /*border: 5px solid black;*/
@@ -67,16 +70,20 @@ div {
 }
 .a {
     position: absolute;
-    bottom: 80%;
+    bottom: 60%;
     left: 37%;
 }
 .b {
     position: absolute;
-    bottom: 60%;
+    bottom: 30%;
     left: 37%;
 }
-.c {
+.Table {
+    width: 700px;
     position: absolute;
-    bottom: 40%;
-    left: 37%;
+    bottom: 1%;
+    left: 30%;
+    border: 0px;
+    border-radius: 0%;
+    background-color: var(--color_fon);
 }
