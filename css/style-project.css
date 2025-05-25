@@ -8,7 +8,7 @@ a:hover {
     --color_fon: rgb(134, 166, 255);
 }
 [data-theme="dark"] {                   
-    --color_block: rgb(1, 6, 29);
+    --color_block: rgb(13, 21, 56);
     --color_font_border: #ffffff;
     --color_fon: rgb(0, 0, 0);
 }
@@ -62,7 +62,7 @@ div {
     left: 62%;
 }
 .run {
-    width: 600px;
+    width: 900px;
     height: 100px;
     position: absolute;
     left: 5%;

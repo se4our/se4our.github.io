@@ -1,3 +1,11 @@
+:root {
+    --color_clue: azure;
+    --color_hint: rgb(43, 198, 226);
+}
+[data-theme="dark"] {                   
+    --color_clue: black;
+    --color_hint: rgb(3, 42, 49);
+}
 .carts {
     width: 60%;
     height: 80%;
@@ -6,7 +14,7 @@
     position: absolute;
     text-align: left;
 }
-.res {
+.button {
     position: absolute;
     bottom: 5%;
     left: 45%;
@@ -22,7 +30,8 @@ picture {
     position: absolute;
     top: 90%;
     left: 1%;
-    background-color: rgb(43, 198, 226);
+    /*background-color: rgb(43, 198, 226);*/
+    background-color: var(--color_hint);
     border: 0px;
     border-radius: 10px;
 }
@@ -32,6 +41,8 @@ picture {
 }
 .yes1, .no1 {
     display: none;
+    position: absolute;
+    bottom: 18%;
 }
 .clue {
     position: absolute;
@@ -39,5 +50,6 @@ picture {
     height: 100px;
     top: 85%;
     left: 5%;
-    background-color: azure;
+    /*background-color: azure;*/
+    background-color: var(--color_clue);
 }
