@@ -1,5 +1,5 @@
 :root {
-    --color_clue: azure;
+    --color_clue: #ffffff;
     --color_hint: rgb(43, 198, 226);
 }
 [data-theme="dark"] {                   
