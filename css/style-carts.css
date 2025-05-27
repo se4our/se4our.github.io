@@ -2,28 +2,24 @@
     --color_clue: #ffffff;
     --color_hint: rgb(43, 198, 226);
 }
-[data-theme="dark"] {                   
+
+[data-theme="dark"] {
     --color_clue: black;
     --color_hint: rgb(3, 42, 49);
 }
-.carts {
-    width: 60%;
-    height: 80%;
-    left: 20%;
-    bottom: 10%;
-    position: absolute;
-    text-align: left;
-}
+
 .button {
     position: absolute;
     bottom: 5%;
     left: 45%;
 }
+
 picture {
     position: absolute;
     bottom: 50%;
     left: 28%;
 }
+
 .hint {
     width: 40px;
     height: 40px;
@@ -35,15 +31,19 @@ picture {
     border: 0px;
     border-radius: 10px;
 }
-.cart1{
+
+.cart1 {
     position: absolute;
     bottom: 30%;
 }
-.yes1, .no1 {
+
+.yes1,
+.no1 {
     display: none;
     position: absolute;
     bottom: 18%;
 }
+
 .clue {
     position: absolute;
     width: 280px;
@@ -52,4 +52,26 @@ picture {
     left: 5%;
     /*background-color: azure;*/
     background-color: var(--color_clue);
+}
+
+@media screen and (min-width: 960px) {
+    .carts {
+        width: 60%;
+        height: 80%;
+        left: 20%;
+        bottom: 10%;
+        position: absolute;
+        text-align: left;
+    }
+}
+
+@media screen and (max-width: 960px) {
+    .carts {
+        width: 80%;
+        height: 80%;
+        left: 10%;
+        bottom: 5%;
+        position: absolute;
+        text-align: left;
+    }
 }

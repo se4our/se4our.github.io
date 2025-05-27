@@ -6,12 +6,35 @@
     position: absolute;
     overflow-y: scroll;
 }
+
 form.t2 {
     display: none;
 }
+
 span {
     display: none;
 }
+
 picture {
     display: none;
+}
+@media screen and (min-width: 960px)  {
+    .test {
+        width: 60%;
+        height: 80%;
+        left: 20%;
+        bottom: 10%;
+        position: absolute;
+        overflow-y: scroll;
+    }
+}
+@media screen and (max-width: 960px)  {
+    .test {
+        width: 80%;
+        height: 80%;
+        left: 10%;
+        bottom: 10%;
+        position: absolute;
+        overflow-y: scroll;
+    }
 }
