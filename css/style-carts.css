@@ -8,18 +8,6 @@
     --color_hint: rgb(3, 42, 49);
 }
 
-.button {
-    position: absolute;
-    bottom: 5%;
-    left: 45%;
-}
-
-picture {
-    position: absolute;
-    bottom: 50%;
-    left: 28%;
-}
-
 .hint {
     width: 40px;
     height: 40px;
@@ -37,31 +25,42 @@ picture {
     bottom: 30%;
 }
 
-.yes1,
-.no1 {
-    display: none;
-    position: absolute;
-    bottom: 18%;
-}
-
-.clue {
-    position: absolute;
-    width: 280px;
-    height: 100px;
-    top: 85%;
-    left: 5%;
-    /*background-color: azure;*/
-    background-color: var(--color_clue);
-}
-
 @media screen and (min-width: 960px) {
     .carts {
         width: 60%;
         height: 80%;
         left: 20%;
-        bottom: 10%;
+        top: 10%;
         position: absolute;
         text-align: left;
+    }
+
+    picture {
+        position: absolute;
+        bottom: 50%;
+        left: 28%;
+    }
+
+    .button {
+        position: absolute;
+        bottom: 5%;
+        left: 45%;
+    }
+
+    .yes1,
+    .no1 {
+        display: none;
+        overflow-y: scroll;
+    }
+
+    .clue {
+        position: absolute;
+        width: 280px;
+        height: 100px;
+        top: 85%;
+        left: 5%;
+        /*background-color: azure;*/
+        background-color: var(--color_clue);
     }
 }
 
@@ -70,8 +69,36 @@ picture {
         width: 80%;
         height: 80%;
         left: 10%;
-        bottom: 5%;
+        top: 10%;
         position: absolute;
         text-align: left;
+    }
+
+    picture {
+        position: absolute;
+        bottom: 65%;
+        left: 23%;
+    }
+    
+    .button {
+        position: absolute;
+        bottom: 5%;
+        left: 37%;
+    }
+
+    .yes1,
+    .no1 {
+        display: none;
+        overflow-y: scroll;
+    }
+
+    .clue {
+        position: absolute;
+        width: 280px;
+        height: 100px;
+        top: 80%;
+        left: 15%;
+        /*background-color: azure;*/
+        background-color: var(--color_clue);
     }
 }

@@ -1,4 +1,4 @@
-window.onload = function () {
+window.addEventListener("load", function () {
     const save = localStorage.getItem("data-theme");
     const theme = document.getElementById("theme");
     if (save) {
@@ -9,9 +9,9 @@ window.onload = function () {
     }
     if (theme) {
         theme.addEventListener("change", function () {
-                const value = theme.value;
-                document.documentElement.setAttribute("data-theme", value);
-                localStorage.setItem("data-theme", value);
-            });
-        }
+            const value = theme.value;
+            document.documentElement.setAttribute("data-theme", value);
+            localStorage.setItem("data-theme", value);
+        });
     }
+});
