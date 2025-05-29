@@ -7,6 +7,7 @@
         left: 5%;
         text-align: justify;
         overflow-y: scroll;
+        padding: 5px 5px;
     }
     
     .heading {
@@ -15,6 +16,24 @@
         position: absolute;
         left: 5%;
         top: 3%;
+    }
+
+    .conclusion {
+        width: 90%;
+        height: 75%;
+        position: absolute;
+        bottom: 10%;
+        left: 5%;
+        text-align: justify;
+        overflow-y: scroll;
+        padding: 5px 5px;
+        white-space: pre-line;
+    }
+
+    #generate {
+        position: absolute;
+        bottom: 2%;
+        left: 5%;
     }
 }
 @media screen and (max-width: 960px) {
@@ -26,13 +45,32 @@
         left: 5%;
         text-align: justify;
         overflow-y: scroll;
+        padding: 5px 5px;
     }
 
     .heading {
         width: 90%;
-        height: 15%;
+        height: 13%;
         position: absolute;
         left: 5%;
         top: 3%;
+    }
+
+    .conclusion {
+        width: 90%;
+        height: 75%;
+        position: absolute;
+        bottom: 10%;
+        left: 5%;
+        text-align: justify;
+        overflow-y: scroll;
+        padding: 5px 5px;
+        white-space: pre-line;
+    }
+
+    #generate {
+        position: absolute;
+        bottom: 2%;
+        left: 5%;
     }
 }
