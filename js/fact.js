@@ -33,7 +33,7 @@
             }
             let random = parseInt(Math.random() * object.length);
             if (list_years[random] < 0) {
-                conclusion.textContent += Math.abs(list_years[random]) + " before christ. " + list_events[random] + " \n";
+                conclusion.textContent += Math.abs(list_years[random]) + " before christ. " + list_events[random] + "\n";
             }
             else {
                 conclusion.textContent += list_years[random] + ". " + list_events[random] + " \n";

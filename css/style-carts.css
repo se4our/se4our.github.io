@@ -21,6 +21,7 @@
         top: 10%;
         position: absolute;
         text-align: left;
+        overflow-y: scroll;
     }
 
     picture {
@@ -38,7 +39,6 @@
     .yes1,
     .no1 {
         display: none;
-        overflow-y: scroll;
     }
 
     .clue {
@@ -72,6 +72,7 @@
         top: 10%;
         position: absolute;
         text-align: left;
+        overflow-y: scroll;
     }
 
     picture {
@@ -89,7 +90,6 @@
     .yes1,
     .no1 {
         display: none;
-        overflow-y: scroll;
     }
 
     .clue {
